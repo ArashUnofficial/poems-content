@@ -1,0 +1,117 @@
+:root {
+  --primary: #333;
+  --bg: #f9f9f9;
+  --card-bg: #fff;
+  --accent: #00796b;
+}
+
+body {
+  font-family: "Tahoma", "Segoe UI", sans-serif; /* Use a nice Persian font if possible */
+  margin: 0;
+  background-color: var(--bg);
+  color: var(--primary);
+  line-height: 1.6;
+}
+
+header {
+  background: var(--card-bg);
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+/* Status Indicators */
+#status-indicator {
+  font-size: 0.8rem;
+  color: #666;
+}
+#status-indicator.online {
+  color: green;
+}
+#status-indicator.offline {
+  color: red;
+}
+
+#update-notification {
+  background: var(--accent);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(50%);
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  z-index: 1000;
+}
+.hidden {
+  display: none !important;
+}
+
+/* Poem List */
+.list-container {
+  padding: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.poem-card {
+  background: var(--card-bg);
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.poem-card:active {
+  transform: scale(0.98);
+}
+.poem-card h3 {
+  margin: 0 0 0.5rem 0;
+  color: var(--accent);
+}
+.poem-card span {
+  font-size: 0.85rem;
+  color: #888;
+}
+
+/* Reader View */
+#reader-view {
+  padding: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+#back-btn {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  color: var(--accent);
+  cursor: pointer;
+  padding: 0.5rem 0;
+}
+#poem-content {
+  margin-top: 1rem;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+}
+.poem-line {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
