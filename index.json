@@ -1,5 +1,5 @@
 {
-  "version": 12,
+  "version": 15,
   "poems": [
     {
       "id": "p1",
@@ -30,15 +30,10 @@
       "filename": "poem5.json",
       "title": "goor",
       "date": "2023-11-05"
-    },
-    {
-      "id": "p6",
-      "filename": "poem6.json",
-      "title": "garonalo",
-      "date": "2023-11-05"
     }
   ]
 }
+
 
 
 
